@@ -1,13 +1,20 @@
 import React from 'react';
+import axios from 'axios';
 import SearchBar from './SearchBar'
 import './searchBar.css'
 
-const App = () => {
-  return ( 
-    <div className="ui container searchbar" >
-      <SearchBar />
-    </div>
-  );
-};
+class App extends React.Component {
+  onSearchSubmit(term){
+    
+  }
+  
+  render(){
+    return ( 
+      <div className="ui container searchbar" >
+        <SearchBar onMySubmit={this.onSearchSubmit}/> 
+      </div>
+    );
+  }
+}
 
 export default App;
