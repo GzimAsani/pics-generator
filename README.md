@@ -1,8 +1,7 @@
-# Getting Started with Create React App
+# PICS GENERATOR
 
 
-
-Acalculator app build with react 
+- Simple project build with react which allows you to search for different pictures such as cars, flowers and houses.
 
 ![img](./readme.png)
 
