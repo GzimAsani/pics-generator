@@ -1,7 +1,8 @@
 import React from 'react';
-import unsplash from '../api/unsplash'
-import SearchBar from './SearchBar'
-import './searchBar.css'
+import unsplash from '../api/unsplash';
+import SearchBar from './SearchBar';
+import './searchBar.css';
+import ImageList from './imageList'
 
 class App extends React.Component {
   state = { images: [] }
@@ -17,7 +18,7 @@ class App extends React.Component {
     return ( 
       <div className="ui container searchbar" >
         <SearchBar onMySubmit={this.onSearchSubmit}/>
-        Found: {( this.state.images.length )} Images 
+        <ImageList images={this.state.images} />
       </div>
     );
   }
